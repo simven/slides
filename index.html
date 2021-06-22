@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Simon Vennat">
+  <title>Soutenance de projet - Chausport</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@3.9.2//css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@3.9.2//css/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@3.9.2//css/theme/solarized.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://unpkg.com/reveal.js@3.9.2//css/print/pdf.css' : 'https://unpkg.com/reveal.js@3.9.2//css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <figure  style="float:left;margin-left:-180px;width:170px;height:170px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Logo_IUT_Lens.svg/280px-Logo_IUT_Lens.svg.png" />
+      </figure>
+      <figure  style="float:right;margin-right:-170px;width:225px;padding-top:0.7rem;">
+        <img src="ressources/chausport.png" />
+      </figure>
+
+<section id="title-slide">
+  <h2 class="title">Soutenance de projet - Chausport</h2>
+  <p class="author">Simon Vennat</p>
+
+  <h3 style="padding-top:2rem">Tuteurs</h3>
+  <p>François Polubinski</p>
+  <p>Tienté Hsu</p>
+</section>
+
+<section>
+<section id="sommaire" class="title-slide slide level1">
+<h2>Sommaire</h2>
+
+</section>
+<section class="slide level2">
+
+<ol type="1">
+<li>Présentation de l’entreprise</li>
+<li>Présentation de la mission</li>
+<li>Environnement et outils utilisés</li>
+<li>Analyse de l’existant</li>
+<li>Participation au projet</li>
+<li>Difficultés rencontrées</li>
+<li>Répartition des tâches</li>
+<li>Bilan</li>
+</ol>
+</section></section>
+<section>
+<section id="présentation-de-lentreprise" class="title-slide slide level1">
+<h2>Présentation de l’entreprise</h2>
+
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Chausport → enseigne française</li>
+<li>Spécialisé dans la commercialisation de chaussures</li>
+<li>Travail sur des machines virtuelles, VPN pour télétravail</li>
+<li>Service informatique : open space, plusieurs pôles <img style="width:700px; padding: 0.5rem;" data-src="ressources/organigramme.png" /> <em>Organigramme de la DSI Chausport</em></li>
+<li>Moi → pôle production</li>
+</ul>
+</section></section>
+<section>
+<section id="conséquences-de-la-crise-sanitaire" class="title-slide slide level1">
+<h2>Conséquences de la crise sanitaire</h2>
+
+</section>
+<section id="adaptation" class="slide level2">
+<h2>Adaptation</h2>
+<ul>
+<li>Télétravail à 100% depuis novembre</li>
+<li>Assez compliqué pour l’appprentissage</li>
+<li>Interactions plus complexes</li>
+<li>Chômage partiel → 2 jours/semaine en mars et tout le mois d’avril</li>
+</ul>
+</section>
+<section id="la-suite-pour-chausport" class="slide level2">
+<h2>La suite pour Chausport</h2>
+<ul>
+<li>Fin de l’enseigne Chausport dès septembre 2021</li>
+<li>Réorganisation → disparition de certains pôles/services</li>
+<li>Dont le pôle production dont je fais partie</li>
+<li>Beaucoup de départs</li>
+</ul>
+</section></section>
+<section>
+<section id="présentation-de-la-mission" class="title-slide slide level1">
+<h2>Présentation de la mission</h2>
+
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Analyser et créer des applications web et mobile innovantes</li>
+<li>Dans le cadre du projet hubert-basket</li>
+<li>Système de click &amp; collect et d’e-réservation</li>
+<li>Faciliter le retrait d’une commande (moins d’affluence en magasin)</li>
+<li>Pour gérer ces commandes : une application back office</li>
+</ul>
+</section></section>
+<section>
+<section id="environnement-et-outils-utilisés" class="title-slide slide level1">
+<h2>Environnement et outils utilisés</h2>
+
+</section>
+<section id="environnement" class="slide level2">
+<h2>Environnement</h2>
+<ul>
+<li>Machines virtuelles sous Windows 1O <span style="padding-left: 40px;"><img data-src="ressources/windows10.png" style="width: 40px; padding: 5px; margin-bottom: -15px; border: 2px solid #657B83 !important;"/></span></li>
+<li style="padding: 1rem 0;">VPN pour le télétravail <span style="padding-left: 40px;"><img data-src="ressources/cisco.png" style="width: 40px; padding: 5px; margin-bottom: -15px; border: 2px solid #657B83 !important;"/></span></li>
+<li>Frameworks :
+<ul>
+<li>.NET (back) <span style="padding-left: 40px;"><img data-src="ressources/NET.svg" style="width: 40px; padding: 5px; margin-bottom: -15px; border: 2px solid #657B83 !important;"/></span></li>
+<li>Angular (pour le back office) <span style="padding-left: 40px;"><img data-src="ressources/angular.png" style="width: 40px; padding: 5px; margin-bottom: -15px; border: 2px solid #657B83 !important;"/></span></li>
+</ul></li>
+<li style="padding-top: 1rem;">Système de Gestion de Base de Données SQL :
+<ul>
+<li>Microsoft SQL Server <span style="padding-left: 40px;"><img data-src="ressources/msql.png" style="width: 50px; padding: 5px; margin-bottom: -15px; border: 2px solid #657B83 !important;"/></span></li>
+</ul></li>
+</ul>
+</section>
+<section id="outils-collaboratifs" class="slide level2">
+<h2>Outils collaboratifs</h2>
+<ul>
+<li>Teams <span style="padding-left: 40px;"><img data-src="ressources/teams.png" style="width: 40px; margin-bottom: -10px; border: 2px solid #657B83 !important;"/></span>
+<ul>
+<li>Daily meetings</li>
+<li>Communication tout au long de la journée</li>
+</ul></li>
+<li>Outlook <span style="padding-left: 40px;"><img data-src="ressources/outlook.png" style="width: 40px; padding: 5px; margin-bottom: -10px; border: 2px solid #657B83 !important;"/></span>
+<ul>
+<li>Échanges entre services</li>
+<li>Informations importantes</li>
+</ul></li>
+<li>GIT → SourceTree, Bitbucket <span style="padding-left: 40px;"><img data-src="ressources/git.png" style="width: 40px; padding: 5px; margin-bottom: -10px; border: 2px solid #657B83 !important;"/></span>
+<ul>
+<li>Gérer et stocker le projet</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="présentation-de-lexistant" class="title-slide slide level1">
+<h2>Présentation de l’existant</h2>
+
+</section>
+<section class="slide level2">
+
+<ul style="font-size: 90%;">
+<li>Arrivé en cours du projet hubert-basket</li>
+<li style="padding: 1rem 0;">Partie analyse et architecure des application déjà réalisées</li>
+<li>Base des applications (.NET &amp; Angular) déjà mise en place</li>
+<li style="padding-top: 1rem;">5ème sprint en cours (sur 7 sprints au total) <img style="padding: 0 1rem; margin-bottom: 0;" data-src="ressources/sprints.png" /> <em style="padding-left: 8.4rem; font-size: 2rem;">Schéma des sprints du projet hubert-basket</em></li>
+</ul>
+</section></section>
+<section>
+<section id="participation-au-projet" class="title-slide slide level1">
+<h2>Participation au projet</h2>
+
+</section>
+<section id="tâches-réalisées" class="slide level2">
+<h2>Tâches réalisées</h2>
+<ul style="font-size: 90%;">
+<li>Projet Reporting → statistiques sur les e-réservations</li>
+<li style="padding: 1rem 0;">D’abord → création d’un ensemble de requêtes</li>
+<li>Puis → mise en place des statistiques sur le back office</li>
+<li style="padding: 1rem 0;">Page KPI (Indicateurs clés de performance) → informations/connaissances</li>
+<li>Plusieurs widgets
+<ul>
+<li>Tableau TOP Stores</li>
+<li>Tableau TOP Products</li>
+<li>Diagramme de Sankey</li>
+<li>Widget “Devices”</li>
+</ul></li>
+</ul>
+</section>
+<section id="aspect-technique" class="slide level2">
+<h2>Aspect technique</h2>
+<ul>
+<li>Création de procédures avec Microsoft SQL Server</li>
+<li style="padding: 1rem 0;">Mise en place d’API avec le framework .NET</li>
+<li>Implémentation et appels dans le back office avec le framework Angular</li>
+</ul>
+</section></section>
+<section>
+<section id="difficultés-rencontrées" class="title-slide slide level1">
+<h2>Difficultés rencontrées</h2>
+
+</section>
+<section class="slide level2">
+
+<ul style="font-size: 90%;">
+<li><p>Télétravail constant depuis novembre (cours et entreprise)</p></li>
+<li><p>Donc → retour en présentiel avec les deux autres alternants</p></li>
+<li><p>Au début, difficultés →</p>
+<ul>
+<li>.NET (C#) → création d’API, lien avec la base de données</li>
+<li>SQL Server → création de procédures</li>
+<li>Réduire les temps de réponse pour les appels importants</li>
+</ul></li>
+<li><p>Pour palier à ces difficultés, j’ai :</p>
+<ul>
+<li>Posé des questions à l’équipe</li>
+<li>Eu des explications et été accompagné pour les nouvelles notions</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="répartition-des-tâches" class="title-slide slide level1">
+<h2>Répartition des tâches</h2>
+
+</section>
+<section id="entre-les-membres-de-léquipe" class="slide level2">
+<h2>Entre les membres de l’équipe</h2>
+<ul>
+<li>Lors du daily meeting</li>
+<li style="padding: 1rem 0;">Projet reporting → chefs de projet envoient des sketchings à réaliser</li>
+<li>Mes tâches → projet reporting :
+<ul>
+<li>back office Angular</li>
+<li>création d’API .NET</li>
+<li>création de procédures sur SQL Server</li>
+</ul></li>
+</ul>
+</section>
+<section id="dans-le-temps" class="slide level2">
+<h2>Dans le temps</h2>
+<ul>
+<li>Selon le sprint en cours, le chef de projet établit les tickets à réaliser</li>
+</ul>
+</section></section>
+<section>
+<section id="bilan" class="title-slide slide level1">
+<h2>Bilan</h2>
+
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Premier projet en entreprise → très intéressant et enrichissant</li>
+<li style="padding: 1rem 0;">Approfondissement et découverte de nouvelles technologies</li>
+<li>Projet reporting → très formateur</li>
+<li style="padding-top: 1rem;">Montée en compétence</li>
+</ul>
+</section></section>
+<section id="merci-de-votre-attention" class="title-slide slide level1">
+<h2>Merci de votre attention</h2>
+
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@3.9.2//js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://unpkg.com/reveal.js@3.9.2//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://unpkg.com/reveal.js@3.9.2//plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://unpkg.com/reveal.js@3.9.2//plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
